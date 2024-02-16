@@ -38,7 +38,7 @@ header #btn-all {
 .questions-wrapper .question  {
   font-size:25px;
   font-family: arial;
-  margin:4rem
+  margin:2rem
   }
   
 
@@ -51,14 +51,19 @@ header #btn-all {
   .questions-wrapper .user-input  {
     font-size:20px;
     font-family: arial;
-    border:1px solid rgb(192, 192, 192)
+    border:1px solid rgb(214, 214, 214);
+    border-radius: 3px;
+    padding:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    text-align: center;
     }
-    
+   
+   
 
     .questions-wrapper .user-input:focus-visible {
-        outline: 1px solid white;
-        border-radius: 3px;
-        border:none
+        outline: 1px solid rgb(231, 231, 231);
+       
       }
   
 .answer {
@@ -83,14 +88,15 @@ header #btn-all {
     letter-spacing: 0.07rem;
     cursor: pointer;
     margin-left:2rem;
-    width:100px
+    width:100px;
+    margin-top:1.5rem
 
 }
 
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
 
     .questions-wrapper {
@@ -109,7 +115,7 @@ header #btn-all {
 
         .show-answer-btn{ padding: 0.3rem 0.7rem;
             margin:auto;
-            margin-top:1rem
+            
         
         }
 

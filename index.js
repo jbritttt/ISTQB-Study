@@ -9,6 +9,7 @@ let btnAll = document.querySelector("#btn-all");
 answers.forEach((item) => {
   btnAll.addEventListener("click", (e) => {
     item.classList.toggle("show");
+    
   });
 });
 
