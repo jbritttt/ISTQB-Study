@@ -3,11 +3,25 @@ body{
     padding:0
 }
 
+header  {
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 header img {
 
     width:200px
 }
+
+header #btn-all {
+
+    width:auto
+}
+
 
 .questions-wrapper {
   display: grid;
@@ -51,7 +65,8 @@ header img {
   display: none;
   font-size:20px;
   font-family: arial;
-  margin-top:3rem
+  margin-top:3rem;
+  color:green
 
 }
 
@@ -93,7 +108,8 @@ header img {
 
 
         .show-answer-btn{ padding: 0.3rem 0.7rem;
-            margin:auto
+            margin:auto;
+            margin-top:1rem
         
         }
 
