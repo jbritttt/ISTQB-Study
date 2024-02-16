@@ -1,0 +1,18 @@
+.questions-wrapper{
+
+    display:grid;
+    grid-template-columns: 1fr;
+    width:50%;
+    margin:auto;
+    gap:4rem;
+    text-align:center
+}
+
+.answer{
+    display:none
+}
+
+.show{
+
+    display:block
+}
