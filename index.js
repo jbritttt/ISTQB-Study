@@ -2,8 +2,19 @@ let answers = document.querySelectorAll(".answer");
 
 let showAnswerBtn = document.querySelectorAll(".show-answer-btn");
 
-answers.forEach((item) => {
-  //item.style.display = 'none'
+let userInput = document.querySelectorAll(".user-input");
+
+
+
+userInput.forEach((item) => {
+
+    item.addEventListener("click", (e) => {
+       
+    
+       
+        
+      });
+  
 });
 
 showAnswerBtn.forEach((item) => {

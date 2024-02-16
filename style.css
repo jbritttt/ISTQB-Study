@@ -1,3 +1,14 @@
+body{
+
+    padding:0
+}
+
+
+header img {
+
+    width:200px
+}
+
 .questions-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,6 +16,7 @@
   margin: auto;
   gap: 4rem;
   text-align: center;
+  padding-bottom:18rem
 }
 
 
@@ -12,28 +24,34 @@
 .questions-wrapper .question  {
   font-size:25px;
   font-family: arial;
-  margin:3rem
+  margin:4rem
   }
   
 
   .questions-wrapper div  {
     border-bottom:1px solid rgb(145, 145, 145);
-    padding-bottom:3rem
+    padding-bottom:4rem;
+    
     }
 
   .questions-wrapper .user-input  {
     font-size:20px;
     font-family: arial;
+    border:1px solid rgb(192, 192, 192)
     }
     
 
-
+    .questions-wrapper .user-input:focus-visible {
+        outline: 1px solid white;
+        border-radius: 3px;
+        border:none
+      }
   
 .answer {
   display: none;
   font-size:20px;
   font-family: arial;
-  margin:3rem
+  margin-top:3rem
 
 }
 
@@ -72,4 +90,20 @@
        
         }
     
+
+
+        .show-answer-btn{ padding: 0.3rem 0.7rem;
+            margin:auto
+        
+        }
+
+
+        .answer {
+          
+            margin-left:0;
+            margin-right:0;
+          
+          }
+
+
     }
