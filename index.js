@@ -1,31 +1,25 @@
-let answers = document.querySelectorAll('.answer')
+let answers = document.querySelectorAll(".answer");
 
-let showAnswerBtn = document.querySelectorAll('.show-answer-btn')
+let showAnswerBtn = document.querySelectorAll(".show-answer-btn");
 
-answers.forEach(item => {
+answers.forEach((item) => {
+  //item.style.display = 'none'
+});
 
-    //item.style.display = 'none'
+showAnswerBtn.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    item.nextElementSibling.classList.toggle("show");
 
+    if(item.textContent == 'Show'){
+        item.textContent = 'Hide'
 
+    }else{
+        item.textContent = 'Show'
+
+    }
     
-
-})
-
-
+  });
+});
 
 
-showAnswerBtn.forEach(item => {
 
-    
-
-    item.addEventListener('click',(e) => {
-
-
-        item.nextElementSibling.classList.toggle("show")
-
-
-    
-    })
-    
-
-})
