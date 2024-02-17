@@ -68,6 +68,7 @@ header #btn-all {
   font-family: arial;
   margin-top: 3rem;
   color: green;
+  line-height:30px
 }
 
 .show {
@@ -110,5 +111,6 @@ header #btn-all {
   .answer {
     margin-left: 0;
     margin-right: 0;
+   
   }
 }
