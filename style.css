@@ -68,7 +68,9 @@ header #btn-all {
   font-family: arial;
   margin-top: 3rem;
   color: green;
-  line-height:30px
+  line-height:30px;
+  text-align:left;
+  padding:1rem
 }
 
 .show {
