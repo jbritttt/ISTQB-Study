@@ -4,18 +4,22 @@ let showAnswerBtn = document.querySelectorAll(".show-answer-btn");
 
 let userInput = document.querySelectorAll(".user-input");
 
-let btnAll = document.querySelector("#btn-all");
+let btnShowAllAnswers = document.querySelector("#btn-all");
+
+const hideAnswer = 'Hide Answer'
+
 
 answers.forEach((item) => {
-  btnAll.addEventListener("click", (e) => {
-    item.classList.toggle("show");
     
+    btnShowAllAnswers.addEventListener("click", (e) => {
+    item.classList.toggle("show");
+   
   });
 });
 
 showAnswerBtn.forEach((item) => {
   item.addEventListener("click", (e) => {
-    item.nextElementSibling.classList.toggle("show");
+    item.parentElement.parentElement.lastElementChild.classList.toggle("show");
 
     if (item.textContent == "Show") {
       item.textContent = "Hide";
@@ -24,3 +28,4 @@ showAnswerBtn.forEach((item) => {
     }
   });
 });
+
