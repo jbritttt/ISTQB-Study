@@ -77,6 +77,11 @@ header #btn-all {
   display: block;
 }
 
+.hide{
+
+    display:none
+}
+
 .show-answer-btn, #btn-all {
   padding: 0.3rem 0.7rem;
   color: white;

@@ -6,26 +6,44 @@ let userInput = document.querySelectorAll(".user-input");
 
 let btnShowAllAnswers = document.querySelector("#btn-all");
 
-const hideAnswer = 'Hide Answer'
 
-
-answers.forEach((item) => {
-    
-    btnShowAllAnswers.addEventListener("click", (e) => {
-    item.classList.toggle("show");
-   
-  });
-});
 
 showAnswerBtn.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    item.parentElement.parentElement.lastElementChild.classList.toggle("show");
 
-    if (item.textContent == "Show") {
-      item.textContent = "Hide";
-    } else {
-      item.textContent = "Show";
+    function changeBtnText(){
+
+        if (item.textContent == "Show") {
+            item.textContent = "Hide";
+          } else {
+            item.textContent = "Show";
+          }
     }
+
+  item.addEventListener("click", (e) => {
+
+    item.parentElement.parentElement.lastElementChild.classList.toggle("show");
+    changeBtnText()
   });
+
+  
+    
+  btnShowAllAnswers.addEventListener("click", (e) => {
+    item.parentElement.parentElement.lastElementChild.classList.toggle("show");
+    changeBtnText()
+        if (btnShowAllAnswers.textContent == "Show Answers") {
+            btnShowAllAnswers.textContent = "Hide Answers";
+            
+
+          } else {
+            btnShowAllAnswers.textContent = "Show Answers";
+           
+          }
+          
+          
+          
+          
+  });
+
+  
 });
 
