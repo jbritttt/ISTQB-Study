@@ -46,6 +46,7 @@ header #btn-all {
   margin: auto;
 }
 
+
 .questions-wrapper .user-input {
   font-size: 20px;
   font-family: arial;
@@ -95,6 +96,11 @@ header #btn-all {
   margin-top: 1.5rem;
 }
 
+
+
+
+
+
 @media only screen and (max-width: 900px) {
   .questions-wrapper {
     width: 100%;
@@ -109,6 +115,10 @@ header #btn-all {
   .questions-wrapper .text-area-wrapper {
     width: 90%;
   }
+
+
+  
+
 
   .show-answer-btn {
     padding: 0.3rem 0.7rem;
