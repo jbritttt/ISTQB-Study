@@ -12,9 +12,44 @@ header img {
   width: 200px;
 }
 
+
+.show-answer-btn, #btn-all {
+  padding: 0.3rem 0.7rem;
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  font-family: arial;
+  letter-spacing: 0.07rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  width: 100px;
+  margin-top: 1.5rem;
+}
+
+
 header #btn-all {
   width: auto;
+  margin:0;
+  margin-top:1rem
 }
+
+header .link-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+header .link-wrap a {
+ text-align: center;
+ 
+ 
+ 
+  
+}
+
 
 .questions-wrapper {
   display: grid;
@@ -83,18 +118,6 @@ header #btn-all {
     display:none
 }
 
-.show-answer-btn, #btn-all {
-  padding: 0.3rem 0.7rem;
-  color: white;
-  background-color: black;
-  font-size: 16px;
-  font-family: arial;
-  letter-spacing: 0.07rem;
-  cursor: pointer;
-  margin-left: 2rem;
-  width: 100px;
-  margin-top: 1.5rem;
-}
 
 
 
