@@ -6,6 +6,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding:2rem
 }
 
 header img {
@@ -13,11 +14,11 @@ header img {
 }
 
 
-.show-answer-btn, #btn-all {
+.show-answer-btn, #btn-all, #Syllabus {
   padding: 0.3rem 0.7rem;
   color: white;
   background-color: black;
-  font-size: 16px;
+  font-size: 15px;
   font-family: arial;
   letter-spacing: 0.07rem;
   cursor: pointer;
@@ -25,6 +26,18 @@ header img {
   width: 100px;
   margin-top: 1.5rem;
 }
+
+
+#Syllabus{
+  background-color: #005288;
+  margin:0;
+  margin-top:1rem;
+  text-decoration: none;
+
+
+}
+
+
 
 
 header #btn-all {
@@ -120,20 +133,7 @@ header .link-wrap a {
 
 
 
-.style-syllabus {
-  font-size: 20px;
-  font-family: arial;
- 
-  
-  padding: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: left;
-  line-height: 25px;
-  width:60%;
-  margin:auto
-  
-}
+
 
 
 
@@ -167,3 +167,19 @@ header .link-wrap a {
    
   }
 }
+
+@media only screen and (max-width: 500px) {
+
+  header {
+   
+    padding:0
+  }
+
+  header img {
+    width: 150px;
+  }
+  
+
+}
+
+
